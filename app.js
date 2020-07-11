@@ -18,6 +18,7 @@ dotenv.config();
         useUnifiedTopology: true,
       }
     );
+    console.log('Conectado ao banco');
   } catch (error) {
     console.log('Erro ao conectar no MongoDB' + error);
   }

@@ -3,16 +3,16 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { studentRouter } from './routes/studentRouter.js';
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
 
-dotenv.config();
+//dotenv.config();
 // Conectar ao MongoDB pelo mongoose
 const app = express();
 (async () => {
   try {
     await mongoose.connect(
-      `mongodb+srv://${process.env.USERDB}:${process.env.PWDDB}@bootcamp.vjfcx.mongodb.net/grades?retryWrites=true&w=majority`,
-      //'mongodb+srv://admin:1111@bootcamp.vjfcx.mongodb.net/grades?retryWrites=true&w=majority',
+      //`mongodb+srv://${process.env.USERDB}:${process.env.PWDDB}@bootcamp.vjfcx.mongodb.net/grades?retryWrites=true&w=majority`,
+      'mongodb+srv://admin:1111@bootcamp.vjfcx.mongodb.net/grades?retryWrites=true&w=majority',
 
       {
         useNewUrlParser: true,
